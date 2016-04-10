@@ -2,9 +2,28 @@
   <ion-content>
     <h1>Hello {{ username }}</h1>
     <ion-list>
-      <ion-item ng-repeat="item in items">
-        {{item}}
-      </ion-item>
-</ion-list>
+      <!-- image -->
+	     <ion-item ng-repeat="app in apps" class="item-thumbnail-left item-icon-right" type="item-text-wrap" href="#/app/dashboard/{{app.id}}">
+	       <img ng-src="{{app.media_url}}" alt="{{app.service_name}}">
+
+	       <!-- title location description -->
+	       <div class="col-75">
+	         <h2>{{app.title}}</h2>
+	         <p>{{app.description}}</p>
+	       
+	       
+	       <!-- status -->
+	       <div class="row">
+
+	       <div class="col-75">
+	         <p>{{app.updated_datetime | date: 'medium'}}</p>
+	       </div>
+	       </div>
+	       
+
+	       <i class="icon ion-chevron-right icon-accessory"></i>
+	     </ion-item>
+
+	</ion-list>
   </ion-content>
 </ion-view>

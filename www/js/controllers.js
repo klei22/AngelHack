@@ -33,9 +33,8 @@ angular.module('starter.controllers', [])
   $scope.doLogin = function() {
     $scope.username = $scope.loginData.username;
     $scope.password = $scope.loginData.password;
-    if ($scope.username == "DJtok" && $scope.password == "angelHack16"){
+    if ($scope.username == "jay" && $scope.password == "abc"){
         console.log('it matches');
-//        $location.path("/main");
         $state.go('app.main');
     }
     
@@ -50,5 +49,18 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+
+.controller('MainCtrl', function($scope, $stateParams) {
+  console.log("on main controller");
+
+  $scope.apps = [
+      { title: 'App 1', description: 'Money Maker', id: 1 },
+      { title: 'App 2', description: 'Exotic Animals', id: 2 },
+      { title: 'App 3', description: 'Everything Furry', id: 3 }
+    ];
+})
+
+.controller('DashboardCtrl', function($scope, $stateParams) {
+
 });
+
