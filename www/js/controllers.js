@@ -54,9 +54,9 @@ angular.module('starter.controllers', [])
   console.log("on main controller");
     
   $scope.apps = [
-      { title: 'App 1', description: 'Money Maker', id: 1 },
-      { title: 'App 2', description: 'Exotic Animals', id: 2 },
-      { title: 'App 3', description: 'Everything Furry', id: 3 }
+      { title: 'App 1', description: 'Money Maker', media_url:'https://telegram.org/img/t_logo.png',id: 1 },
+      { title: 'App 2', description: 'Exotic Animals', media_url:'http://cdn.appstorm.net/iphone.appstorm.net/files/2010/06/iPhoneFinance-22.jpg', id: 2 },
+      { title: 'App 3', description: 'Everything Furry',media_url: 'http://a5.mzstatic.com/us/r30/Purple/v4/8d/35/36/8d3536f3-57df-fb5f-1584-eb8a05df8d35/icon128-2x.png', id: 3 }
     ];
 })
 
