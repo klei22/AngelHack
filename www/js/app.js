@@ -49,42 +49,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router'])
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
+    
 
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.dashboards', {
+    url: '/dashboards',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
+        templateUrl: 'templates/dashboard.html',
         controller: 'PlaylistCtrl'
       }
     }
   })
-
-  // .state('app.dashboards', {
-  //   url: '/dashboards',
-  //   // views: {
-  //   //   'menuContent': {
-  //   //     templateUrl: 'templates/playlist.html',
-  //   //     controller: 'PlaylistCtrl'
-  //   //   }
-  //   // }
-  // })
 
   .state('app.dashboard', {
     url: '/main/:dashboardId',
     views: {
       'menuContent': {
         templateUrl: 'templates/dashboard.html',
-        controller: 'DashboardCtrl'
+        controller: 'PlaylistCtrl'
       }
     }
   })
@@ -110,5 +92,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  // $urlRouterProvider.otherwise('/app/main');
+  $urlRouterProvider.otherwise('/app/login');
 });
