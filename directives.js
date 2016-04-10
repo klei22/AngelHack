@@ -1,0 +1,3 @@
+myapp.directive("weatherReport",function(){
+   
+}); 
