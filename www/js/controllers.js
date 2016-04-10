@@ -34,6 +34,7 @@ angular.module('starter.controllers', [])
     $scope.username = $scope.loginData.username;
     $scope.password = $scope.loginData.password;
 
+    
     console.log('Doing login', $scope.loginData);
 
     // Simulate a login delay. Remove this and replace with your login
