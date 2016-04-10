@@ -1,1 +1,44 @@
 /* Empty. Add your own CSS if you like */
+h1 {
+  color: #fff;
+  font-weight: 300;
+  font-family:sans-serif;
+  text-align: left;
+}
+
+#amount1{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    background-color: #2eb82e;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+#amount2{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    background-color: #3399ff;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+#amount3{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    background-color: #9966ff;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+#amount4{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    background-color: #400080;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+}
+#amount5{
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    background-color: #19194d;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}

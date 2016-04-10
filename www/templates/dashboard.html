@@ -1,6 +1,76 @@
 <ion-view view-title="Dashboard">
   <ion-content>
     <h1>DashBoard{{ app.id }}</h1>
-    
+    <h2>Date: Time</h2>
+    <hr/>
+    <div class="row">
+        <div class="col-md-4 col-xs-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="color:blue">Deposits</h3>
+                </div>
+                <div class="panel-body" id="amount1">$790.26 <span style="font-size: 15px;" ><p>Upcoming Deposits</p></span></div>
+               
+                <div class="panel-footer">$1,473.56 Last Deposit</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="color:blue">Gross Sales</h3>
+                </div>
+                <div class="panel-body" id="amount2">$1,142.62<span style="font-size: 15px;" ><p><i class="icon ion-android-add-circle"></i> 7.26% From Last Week</p><p><i class="icon ion-android-add-circle"></i> 4.18% From 6 Months Ago</p></span>
+                </div>
+                <div class="panel-footer">58 Transactions</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="color:blue">Payment Methods</h3>
+                </div>
+                <table class = "table">
+                  <tr id="amount3">
+                     <td >Credit: </td>
+                     <th>$2,048.52 </th>
+                  </tr>
+
+                  <tr id="amount4">
+                     <td>Debit: </td>
+                     <td>$876.96</td>
+                  </tr>
+
+                  <tr id="amount5">
+                     <td>Other: </td>
+                     <td>$231.43</td>
+                  </tr>
+               </table>
+            </div>
+        </div>
+      </div>
+      
+      <div class="row">
+          <div class="col-xs-4 col-md-4">
+               <ion-list>
+                <ion-list-header class="item item-divider">Top Items by Sales</ion-list-header>
+                <ion-item class="item item-text-wrap">1. Beats by Dr. Dre Solo HD Headphones</ion-item>
+                <ion-item class="item item-text-wrap">2. Monster DNA On-Ear Headphones</ion-item>
+                <ion-item class="item item-text-wrap">3. Sennheiser HD 800 Full Size Headphones</ion-item>
+              </ion-list>
+           </div>
+           <div class="col-xs-8 col-md-8">
+                <p>graph</p>
+               
+            <nvd3-line-chart
+                data="exampleData"
+                showXAxis="true"
+                showYAxis="true"
+                tooltips="true"
+                interactive="true">
+            </nvd3-line-chart>
+                   
+               
+           </div>
+      </div>
   </ion-content>
 </ion-view>

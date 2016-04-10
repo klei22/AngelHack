@@ -1,8 +1,9 @@
 <ion-view view-title="Main">
   <ion-content>
-    <h1 class="positive">Hello {{ username }}</h1>
+    <h1 class="dark">Hello {{ username }}</h1>
     <ion-list>
       <!-- image -->
+        <ion-item class="item-divider">Your projects</ion-item>
 	     <ion-item ng-repeat="app in apps" class="item-thumbnail-left item-icon-right" type="item-text-wrap" href="#/app/main/{{app.id}}">
 	       <img ng-src="{{app.media_url}}" alt="{{app.service_name}}">
 
@@ -22,6 +23,7 @@
 	       
 
 	       <i class="icon ion-chevron-right icon-accessory"></i>
+	     
 	     </ion-item>
 
 	</ion-list>
