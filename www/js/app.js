@@ -92,5 +92,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router','nvd3'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-   $urlRouterProvider.otherwise('/app/main');
+   $urlRouterProvider.otherwise('/app/login');
 });
