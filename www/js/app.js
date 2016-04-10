@@ -66,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router'])
     views: {
       'menuContent': {
         templateUrl: 'templates/dashboard.html',
-        controller: 'PlaylistCtrl'
+        controller: 'MainCtrl'
       }
     }
   })
@@ -92,5 +92,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ui.router'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  // $urlRouterProvider.otherwise('/app/login');
+   $urlRouterProvider.otherwise('/app/main');
 });

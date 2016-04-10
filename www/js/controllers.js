@@ -52,7 +52,7 @@ angular.module('starter.controllers', [])
 
 .controller('MainCtrl', function($scope, $stateParams) {
   console.log("on main controller");
-
+    
   $scope.apps = [
       { title: 'App 1', description: 'Money Maker', id: 1 },
       { title: 'App 2', description: 'Exotic Animals', id: 2 },
@@ -61,6 +61,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('DashboardCtrl', function($scope, $stateParams) {
-
+  
 });
 
